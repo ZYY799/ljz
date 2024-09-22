@@ -7,8 +7,8 @@ from streamlit_folium import folium_static
 import seaborn as sns
 
 # 读取数据
-shapefile_path = r"C:\Users\ZY\Desktop\新陆家嘴问卷数据\问卷数据轨迹\0719讨论\mp\陆家嘴轨迹终高德坐标系\活动轨迹.shp"
-csv_path = r"C:\Users\ZY\Desktop\新陆家嘴问卷数据\问卷数据轨迹\0719讨论\陆家嘴问卷数据.csv"
+shapefile_path = "活动轨迹.shp"
+csv_path = "陆家嘴问卷数据.csv"
 gdf = gpd.read_file(shapefile_path)
 df = pd.read_csv(csv_path)
 
